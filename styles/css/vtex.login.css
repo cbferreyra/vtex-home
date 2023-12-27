@@ -1,10 +1,14 @@
+.vtex-button {
+  background-color: #ff0000;
+}
+
 :global(.flex.pv2.items-center) {
-  background-color: aqua !important;
+  background-color: #dfeded !important;
 }
 :global(
     .vtex-button.bw1.ba.fw5.v-mid.relative.pa0.lh-solid.br2.min-h-regular.t-action.bg-transparent.b--transparent.c-action-primary.hover-b--transparent.hover-bg-action-secondary.hover-b--action-secondary.pointer
   ) {
-  background-color: blueviolet;
+  background-color: #dfeded;
 }
 
 /* .loginButton {
