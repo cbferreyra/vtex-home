@@ -1,7 +1,8 @@
 {
   "store.home": {
     "blocks": [
-      "flex-layout.row",
+      "info-card#home",
+      //"flex-layout.row",
       "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
@@ -9,7 +10,8 @@
       "__fold__",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
-      "info-card#home",
+      "flex-layout.row#shelf2",
+      //"info-card#home",
       "rich-text#question",
       "rich-text#link",
       "newsletter"
@@ -20,16 +22,18 @@
     "children": ["slider-layout#demo-images"],
     "props": {
       "height": 200,
-      
+
       "preload": true,
       "images": [
         {
-          "image": "https://drive.google.com/uc?id=105UTFhnKVMKwNkF7213MF9DDjTF4PnXd",
+          "image": "https://drive.google.com/uc?id=1gSntETPMm3TERjE7s_loKhFWCvDB0YHq",
+          "tabletImage": "https://drive.google.com/uc?id=1gSntETPMm3TERjE7s_loKhFWCvDB0YHq",
           "mobileImage": "https://drive.google.com/uc?id=1B6MXsRast7rxDb8rCWgzDovGtuZYWWCZ"
         },
         {
-          "image": "https://drive.google.com/uc?id=1C5Mxvb-oGwf-wJdNoCmDwjSTblhu-ua4",
-          "mobileImage": "https://drive.google.com/uc?id=1MNvZvTh1Iur754ZARUsLOt-Nzzwc1CSL"
+          "image": "https://drive.google.com/uc?id=1esDc4G7JoelqbS9LkJQ3lmtHb1e3fCQR",
+          "tabletImage": "https://drive.google.com/uc?id=1esDc4G7JoelqbS9LkJQ3lmtHb1e3fCQR",
+          "mobileImage": "https://drive.google.com/uc?id=1oVz36_T8HDGfMFjpggjTXB6bYDKZUTp-"
         }
       ]
     }
@@ -54,7 +58,7 @@
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": ["flex-layout.col#products1", "list-context.product-list#demo1"]
   },
   "list-context.product-list#demo1": {
     "blocks": ["product-summary.shelf"],
@@ -75,13 +79,62 @@
       "blockClass": "shelf"
     }
   },
+  "flex-layout.col#products1": {
+    "children": ["image#products1"],
+    "props": {
+      "width": "20%",
+      "blockClass": "products1"
+    }
+  },
+  "image#products1": {
+    "props": {
+      "src": "https://drive.google.com/uc?id=1Y5oLlcYRU1SF60ER9GBKnVfA3w5rsgKF",
+      "width": "100%"
+    }
+  },
+  //Segundo carrousel de productos
 
+  "flex-layout.row#shelf2": {
+    "children": ["flex-layout.col#products2", "list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+  "flex-layout.col#products2": {
+    "children": ["image#products2"],
+    "props": {
+      "width": "20%",
+      "blockClass": "products2"
+    }
+  },
+  "image#products2": {
+    "props": {
+      "src": "https://drive.google.com/uc?id=1esyqidbanb4HV_NuA2T8cF8GGifdAjmC",
+      "width": "100%"
+    }
+  },
   "info-card#home": {
     "props": {
       "id": "info-card-home",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "https://drive.google.com/uc?id=105UTFhnKVMKwNkF7213MF9DDjTF4PnXd",
       "headline": "Clearance Sale",
       "callToActionText": "DISCOVER",
       "callToActionUrl": "/sale/d",

@@ -10,7 +10,7 @@
       "flex-layout.row#1-desktop",
       /* "flex-layout.row#3-desktop", */
       "sticky-layout#4-desktop"
-    ] 
+    ]
   },
 
   "flex-layout.row#1-desktop": {
@@ -19,7 +19,7 @@
       "fullWidth": true
     }
   },
-  
+
   "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "menu-link",
@@ -56,9 +56,11 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
-     // "flex-layout.col#spacer",
+      "flex-layout.col#spacer",
       "search-bar",
+      "flex-layout.col#category-menu",
+      // ,
+
       //"locale-switcher",
       "login",
       "minicart.v2"
@@ -129,6 +131,11 @@
       "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
       "width": "77.5",
       "height": "27.5"
+    }
+  },
+  "login": {
+    "props": {
+      "blockclass": "loginButton"
     }
   }
 }

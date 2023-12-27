@@ -11,8 +11,13 @@
   margin: 0 auto;
   background-color: #e6f1e6;
   padding: 0px;
+  color: red;
 }
-
+:global(
+    .vtex-button.bw1.ba.fw5.v-mid.relative.pa0.lh-solid.br2.min-h-regular.t-action.bg-transparent.b--transparent.c-action-primary.hover-b--transparent.hover-bg-action-secondary.hover-b--action-secondary.pointer
+  ) {
+  background-color: blueviolet;
+}
 .newsletter {
   background-color: #03054e;
   max-width: 1528px;
@@ -70,7 +75,7 @@
     padding: 140px;
   }
   .label {
-     font-size: 40px;
+    font-size: 40px;
   }
   .infoCardContainer--info-card-home .infoCardTextContainer {
     width: 30%;
@@ -110,4 +115,7 @@
 
 .image {
   image-rendering: -webkit-optimize-contrast;
+}
+.deals :global(.vtex-store-components-3-x-imageElement) {
+  color: black;
 }
