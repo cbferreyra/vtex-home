@@ -1,3 +1,7 @@
 :global(.vtex-button__label) {
   background-color: rgb(128, 101, 101);
 }
+:global(.vtex-button) {
+  background-color: rgb(128, 101, 101);
+  border-color: rgb(128, 101, 101);
+}

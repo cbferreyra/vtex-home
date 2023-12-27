@@ -13,11 +13,18 @@
   padding: 0px;
   color: red;
 }
-:global(
-    .vtex-button.bw1.ba.fw5.v-mid.relative.pa0.lh-solid.br2.min-h-regular.t-action.bg-transparent.b--transparent.c-action-primary.hover-b--transparent.hover-bg-action-secondary.hover-b--action-secondary.pointer
-  ) {
-  background-color: blueviolet;
+.vtex-button.bw1.ba.fw5.v-mid.relative.pa0.lh-solid.br2.min-h-regular.t-action.bg-action-primary.b--action-primary.c-on-action-primary.hover-bg-action-primary.hover-b--action-primary.hover-c-on-action-primary.pointer
+{
+  background-color: green;
 }
+
+.infoCardCallActionContainer--info-card-home{
+  background-color: none;
+}
+ /* :global(.vtex-button.bw1.ba.fw5.v-mid.relative.pa0.lh-solid.br2.min-h-regular.t-action.bg-transparent.b--transparent.c-action-primary.hover-b--transparent.hover-bg-action-secondary.hover-b--action-secondary.pointer
+  ) {
+  background-color: rgb(226, 43, 43);
+}  */
 .newsletter {
   background-color: #03054e;
   max-width: 1528px;
@@ -119,3 +126,9 @@
 .deals :global(.vtex-store-components-3-x-imageElement) {
   color: black;
 }
+
+
+
+
+/* vtex.store-theme@5.1.0+build1703697408$style.common.min.css | https://exto--redclover.myvtex.com/_v/private/vtex.styles-graphql/v1/style/vtex.store-theme@5.1.0+build1703697408$style.common.min.css?v=1 */
+
